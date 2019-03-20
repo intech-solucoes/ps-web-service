@@ -18,8 +18,14 @@ var FichaFinancAssistidoService = /** @class */ (function (_super) {
     __extends(FichaFinancAssistidoService, _super);
     function FichaFinancAssistidoService() {
         var _this = _super.call(this, "fichaFinancAssistido") || this;
-        _this.BuscarPorProcesso = function (sqProcesso) {
-            return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porProcesso/" + sqProcesso);
+        _this.BuscarUltimaPorProcesso = function (sqProcesso) {
+            return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "ultimaPorProcesso/" + sqProcesso);
+        };
+        _this.BuscarDatasPorProcesso = function (sqProcesso) {
+            return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "datasPorProcesso/" + sqProcesso);
+        };
+        _this.BuscarPorProcessoCompetencia = function (sqProcesso, data) {
+            return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porProcessoCompetencia/" + sqProcesso + "/" + _this.FormatarData(data));
         };
         return _this;
     }
