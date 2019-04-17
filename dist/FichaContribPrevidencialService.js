@@ -20,6 +20,7 @@ var FichaContribPrevidencialService = /** @class */ (function (_super) {
         var _this = _super.call(this, "fichaContribPrevidencial") || this;
         _this.BuscarPorPlano = function (plano) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porPlano/" + plano); };
         _this.BuscarSaldos = function (plano) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "saldos/" + plano); };
+        _this.BuscarDatasExtratoPorPlano = function (plano) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "datasExtratoPorPlano/" + plano); };
         return _this;
     }
     return FichaContribPrevidencialService;

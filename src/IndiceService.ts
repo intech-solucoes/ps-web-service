@@ -5,7 +5,8 @@ class IndiceService extends BaseService {
         super("indice");
     }
     
-    BuscarPorCdIndice = (indice: string) => this.CriarRequisicao(TipoRequisicao.GET, null, `porCdIndice/${indice}`);
+    BuscarPorCdIndice = (indice: string) => this.CriarRequisicao(TipoRequisicao.GET, null, `porCodigo/${indice}`);
+    BuscarUltimoPorCdIndice = (indice: string) => this.CriarRequisicao(TipoRequisicao.GET, null, `ultimoPorCodigo/${indice}`);
 
     BuscarPorCdIndicePeriodo = (indice: string, dtInicio: string, dtFim: string) =>
         this.CriarRequisicao(TipoRequisicao.GET, null, `porCdIndicePeriodo/${indice}/${this.FormatarData(dtInicio)}/${this.FormatarData(dtFim)}`);

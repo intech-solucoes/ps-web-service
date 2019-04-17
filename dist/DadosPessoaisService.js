@@ -19,6 +19,7 @@ var DadosPessoaisService = /** @class */ (function (_super) {
     function DadosPessoaisService() {
         var _this = _super.call(this, "dadosPessoais") || this;
         _this.Buscar = function () { return _this.CriarRequisicao(service_1.TipoRequisicao.GET); };
+        _this.BuscarDataAposentadoria = function () { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "dataAposentadoria"); };
         return _this;
     }
     return DadosPessoaisService;

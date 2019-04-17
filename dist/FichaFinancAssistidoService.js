@@ -24,8 +24,11 @@ var FichaFinancAssistidoService = /** @class */ (function (_super) {
         _this.BuscarDatasPorProcesso = function (sqProcesso) {
             return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "datasPorProcesso/" + sqProcesso);
         };
-        _this.BuscarPorProcessoCompetencia = function (sqProcesso, data) {
-            return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porProcessoCompetencia/" + sqProcesso + "/" + _this.FormatarData(data));
+        _this.BuscarPorProcessoReferencia = function (sqProcesso, data) {
+            return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porProcessoReferencia/" + sqProcesso + "/" + _this.FormatarData(data));
+        };
+        _this.BuscarRelatorioPorProcessoReferencia = function (sqProcesso, data) {
+            return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "contrachequePorProcessoReferencia/" + sqProcesso + "/" + _this.FormatarData(data));
         };
         return _this;
     }

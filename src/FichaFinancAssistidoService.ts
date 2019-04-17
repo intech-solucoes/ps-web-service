@@ -11,8 +11,11 @@ class FichaFinancAssistidoService extends BaseService {
     BuscarDatasPorProcesso = (sqProcesso: number) =>
         this.CriarRequisicao(TipoRequisicao.GET, null, `datasPorProcesso/${sqProcesso}`);
 
-    BuscarPorProcessoCompetencia = (sqProcesso: number, data: string) =>
-        this.CriarRequisicao(TipoRequisicao.GET, null, `porProcessoCompetencia/${sqProcesso}/${this.FormatarData(data)}`);
+    BuscarPorProcessoReferencia = (sqProcesso: number, data: string) =>
+        this.CriarRequisicao(TipoRequisicao.GET, null, `porProcessoReferencia/${sqProcesso}/${this.FormatarData(data)}`);
+
+    BuscarRelatorioPorProcessoReferencia = (sqProcesso: number, data: string) =>
+        this.CriarRequisicao(TipoRequisicao.GET, null, `contrachequePorProcessoReferencia/${sqProcesso}/${this.FormatarData(data)}`);
 }
 
 export default new FichaFinancAssistidoService();

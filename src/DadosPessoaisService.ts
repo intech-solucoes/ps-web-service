@@ -6,6 +6,7 @@ class DadosPessoaisService extends BaseService {
     }
     
     Buscar = () => this.CriarRequisicao(TipoRequisicao.GET);
+    BuscarDataAposentadoria = () => this.CriarRequisicao(TipoRequisicao.GET, null, "dataAposentadoria");
 }
 
 export default new DadosPessoaisService();

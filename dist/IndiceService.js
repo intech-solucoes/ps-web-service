@@ -18,7 +18,8 @@ var IndiceService = /** @class */ (function (_super) {
     __extends(IndiceService, _super);
     function IndiceService() {
         var _this = _super.call(this, "indice") || this;
-        _this.BuscarPorCdIndice = function (indice) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porCdIndice/" + indice); };
+        _this.BuscarPorCdIndice = function (indice) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porCodigo/" + indice); };
+        _this.BuscarUltimoPorCdIndice = function (indice) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "ultimoPorCodigo/" + indice); };
         _this.BuscarPorCdIndicePeriodo = function (indice, dtInicio, dtFim) {
             return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porCdIndicePeriodo/" + indice + "/" + _this.FormatarData(dtInicio) + "/" + _this.FormatarData(dtFim));
         };
