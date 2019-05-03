@@ -23,3 +23,5 @@ var ProcessoBeneficioService_1 = __importDefault(require("./ProcessoBeneficioSer
 exports.ProcessoBeneficioService = ProcessoBeneficioService_1.default;
 var FichaFinancAssistidoService_1 = __importDefault(require("./FichaFinancAssistidoService"));
 exports.FichaFinancAssistidoService = FichaFinancAssistidoService_1.default;
+var ContratoEmprestimoService_1 = __importDefault(require("./ContratoEmprestimoService"));
+exports.ContratoEmprestimoService = ContratoEmprestimoService_1.default;

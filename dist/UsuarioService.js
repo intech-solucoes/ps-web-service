@@ -26,6 +26,7 @@ var UsuarioService = /** @class */ (function (_super) {
         _this.TrocarSenha = function (senhaAntiga, senhaNova) {
             return _this.CriarRequisicao(service_1.TipoRequisicao.POST, null, "alterarSenha", { senhaAntiga: senhaAntiga, senhaNova: senhaNova });
         };
+        _this.Menu = function () { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "menu"); };
         return _this;
     }
     return UsuarioService;

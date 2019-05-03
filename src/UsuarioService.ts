@@ -14,6 +14,8 @@ class UsuarioService extends BaseService {
 
     TrocarSenha = (senhaAntiga: string, senhaNova: string) =>
         this.CriarRequisicao(TipoRequisicao.POST, null, "alterarSenha", { senhaAntiga: senhaAntiga, senhaNova: senhaNova });
+
+    Menu = () => this.CriarRequisicao(TipoRequisicao.GET, null, "menu");
 }
 
 export default new UsuarioService();

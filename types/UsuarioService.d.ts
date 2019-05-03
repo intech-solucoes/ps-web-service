@@ -5,6 +5,7 @@ declare class UsuarioService extends BaseService {
     Login: (cpf: string, senha: string) => Promise<any>;
     PrimeiroAcesso: (cpf: string, dataNascimento: string) => Promise<any>;
     TrocarSenha: (senhaAntiga: string, senhaNova: string) => Promise<any>;
+    Menu: () => Promise<any>;
 }
 declare const _default: UsuarioService;
 export default _default;

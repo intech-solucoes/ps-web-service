@@ -8,6 +8,7 @@ import FichaContribPrevidencialService from "./FichaContribPrevidencialService";
 import FichaSalarioContribuicaoService from "./FichaSalarioContribuicaoService";
 import ProcessoBeneficioService from "./ProcessoBeneficioService";
 import FichaFinancAssistidoService from "./FichaFinancAssistidoService";
+import ContratoEmprestimoService from "./ContratoEmprestimoService";
 
 export {
     UsuarioService,
@@ -19,5 +20,6 @@ export {
     FichaContribPrevidencialService,
     FichaSalarioContribuicaoService,
     ProcessoBeneficioService,
-    FichaFinancAssistidoService
+    FichaFinancAssistidoService,
+    ContratoEmprestimoService
 };

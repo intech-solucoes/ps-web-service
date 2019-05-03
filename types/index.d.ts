@@ -8,4 +8,5 @@ import FichaContribPrevidencialService from "./FichaContribPrevidencialService";
 import FichaSalarioContribuicaoService from "./FichaSalarioContribuicaoService";
 import ProcessoBeneficioService from "./ProcessoBeneficioService";
 import FichaFinancAssistidoService from "./FichaFinancAssistidoService";
-export { UsuarioService, DadosPessoaisService, IndiceService, VersaoService, RelacionamentoService, PlanoVinculadoService, FichaContribPrevidencialService, FichaSalarioContribuicaoService, ProcessoBeneficioService, FichaFinancAssistidoService };
+import ContratoEmprestimoService from "./ContratoEmprestimoService";
+export { UsuarioService, DadosPessoaisService, IndiceService, VersaoService, RelacionamentoService, PlanoVinculadoService, FichaContribPrevidencialService, FichaSalarioContribuicaoService, ProcessoBeneficioService, FichaFinancAssistidoService, ContratoEmprestimoService };
