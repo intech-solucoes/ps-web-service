@@ -20,6 +20,8 @@ var UsuarioService = /** @class */ (function (_super) {
         var _this = _super.call(this, "usuario") || this;
         _this.VerificarLogin = function () { return _this.CriarRequisicao(service_1.TipoRequisicao.GET); };
         _this.Login = function (cpf, senha) { return _this.CriarRequisicao(service_1.TipoRequisicao.POST, null, "login", { Cpf: cpf, Senha: senha }); };
+        _this.Pesquisar = function (cpf, nome) { return _this.CriarRequisicao(service_1.TipoRequisicao.POST, null, "pesquisar", { Cpf: cpf, Nome: nome }); };
+        _this.Selecionar = function (cpf) { return _this.CriarRequisicao(service_1.TipoRequisicao.POST, null, "selecionar", { Cpf: cpf }); };
         _this.PrimeiroAcesso = function (cpf, dataNascimento) {
             return _this.CriarRequisicao(service_1.TipoRequisicao.POST, null, "criarAcesso", { Cpf: cpf, DataNascimento: dataNascimento });
         };

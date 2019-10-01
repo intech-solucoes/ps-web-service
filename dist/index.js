@@ -25,3 +25,5 @@ var FichaFinancAssistidoService_1 = __importDefault(require("./FichaFinancAssist
 exports.FichaFinancAssistidoService = FichaFinancAssistidoService_1.default;
 var ContratoEmprestimoService_1 = __importDefault(require("./ContratoEmprestimoService"));
 exports.ContratoEmprestimoService = ContratoEmprestimoService_1.default;
+var DependenteService_1 = __importDefault(require("./DependenteService"));
+exports.DependenteService = DependenteService_1.default;
