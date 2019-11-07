@@ -10,6 +10,7 @@ import ProcessoBeneficioService from "./ProcessoBeneficioService";
 import FichaFinancAssistidoService from "./FichaFinancAssistidoService";
 import ContratoEmprestimoService from "./ContratoEmprestimoService";
 import DependenteService from "./DependenteService";
+import ComprovanteRendimentosService from "./ComprovanteRendimentosService";
 
 export {
     UsuarioService,
@@ -23,5 +24,6 @@ export {
     ProcessoBeneficioService,
     FichaFinancAssistidoService,
     ContratoEmprestimoService,
-    DependenteService
+    DependenteService,
+    ComprovanteRendimentosService
 };

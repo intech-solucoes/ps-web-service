@@ -27,3 +27,5 @@ var ContratoEmprestimoService_1 = __importDefault(require("./ContratoEmprestimoS
 exports.ContratoEmprestimoService = ContratoEmprestimoService_1.default;
 var DependenteService_1 = __importDefault(require("./DependenteService"));
 exports.DependenteService = DependenteService_1.default;
+var ComprovanteRendimentosService_1 = __importDefault(require("./ComprovanteRendimentosService"));
+exports.ComprovanteRendimentosService = ComprovanteRendimentosService_1.default;
