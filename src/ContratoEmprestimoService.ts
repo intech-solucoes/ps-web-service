@@ -1,4 +1,4 @@
-import { BaseService, TipoRequisicao } from "@intechprev/service";
+import { BaseService, TipoRequisicao, TipoResposta } from "@intechprev/service";
 
 class ContratoEmprestimoService extends BaseService {
     constructor() {
@@ -7,6 +7,7 @@ class ContratoEmprestimoService extends BaseService {
     
     Buscar = () => this.CriarRequisicao(TipoRequisicao.GET);
     BuscarPorSqContrato = (sqContrato: number) => this.CriarRequisicao(TipoRequisicao.GET, null, `porSqContrato/${sqContrato}`);
+    GerarRelatorio = (sqContrato: number) => this.CriarRequisicao(TipoRequisicao.GET, null, `GerarExtrato/${sqContrato}`, null, TipoResposta.Blob);
 }
 
 export default new ContratoEmprestimoService();

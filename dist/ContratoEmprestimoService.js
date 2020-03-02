@@ -20,6 +20,7 @@ var ContratoEmprestimoService = /** @class */ (function (_super) {
         var _this = _super.call(this, "contratoEmprestimo") || this;
         _this.Buscar = function () { return _this.CriarRequisicao(service_1.TipoRequisicao.GET); };
         _this.BuscarPorSqContrato = function (sqContrato) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "porSqContrato/" + sqContrato); };
+        _this.GerarRelatorio = function (sqContrato) { return _this.CriarRequisicao(service_1.TipoRequisicao.GET, null, "GerarExtrato/" + sqContrato, null, service_1.TipoResposta.Blob); };
         return _this;
     }
     return ContratoEmprestimoService;
